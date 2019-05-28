@@ -55,7 +55,6 @@
 //   var myVar = 2;
 //   b();
 // }
-
 // var myVar = 1;
 // a();
 
@@ -65,3 +64,22 @@
 // let => new keyword for creating variables in JS (ES6)
 // let is BLOCK SCOPED & is only available in the block 
 // in which it was declared...even in loops!
+
+
+// ASYNC CALLBACKS
+// long running function
+function waitThreeSeconds() {
+    var ms = 3000 + new Date().getTime();
+    while (new Date() < ms) {}
+    console.log('finished function');
+}
+
+function clickHandler() {
+    console.log('click event!');
+}
+
+// listen for the click event
+document.addEventListener('click', clickHandler);
+
+waitThreeSeconds();
+console.log('finished execution');
