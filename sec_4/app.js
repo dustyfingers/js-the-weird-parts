@@ -86,9 +86,9 @@ c.log('Updated c object'); // 'this' is reassigned to be the object the method i
 var d = {
     name: 'The d object',
     log: function () {
-
         // assign a var that points to the current 'this'
         // let self = this;
+
         console.log(this);
 
         // does NOT reassign the d objects name property!
