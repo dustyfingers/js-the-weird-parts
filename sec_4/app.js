@@ -109,3 +109,25 @@ var d = {
 
 d.log('Updated d object'); // 'this' is reassigned to be the object the method is called on
 
+
+// ARRAYS
+var arr = [
+    1,
+    false,
+    {
+        name: 'Tony',
+        age: 42
+    },
+    [
+        'Alan',
+        'Toph',
+        'Zoe'
+    ],
+    function (name) {
+        var greeting = 'Hello ';
+        console.log(greeting + name);
+    },
+    'Louie is awesome'
+];
+arr[4]('Louie');
+arr[4](arr[2].name);
