@@ -1,0 +1,7 @@
+objects are a collection of name/value pairs
+
+but how does an object reside in your computers memory?
+well, objects can point to primitives or even other objects stored off of it -> we call this a property
+or it can point to a function called a method
+
+your base object, the properties and methods it points to and the references (pointers) themselves all have their own address in memory
